@@ -2,11 +2,9 @@ var path = require('path');
 
 var config = {
   mode: 'development',
-  entry: {
-    app: path.join(__dirname, 'src/index.js')
-  },
+  entry: './src/index.js',
   output: {
-    filename: '[name].[ext]',
+    filename: 'app.js',
     path: path.resolve(__dirname, 'public/dist'),
   },
   module: {
@@ -26,13 +24,14 @@ var config = {
     extensions: ['.js', '.vue'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@components': path.resolve(__dirname ,'./src/components'),
+      components: path.resolve(__dirname ,'src/components'),
       '~': './'
     }
   },
   devtool: 'inline-source-map',
   devServer: {
     contentBase: 'public',
+    publicPath: '/dist/',
     port: 3030
   }
 }
