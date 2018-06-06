@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "path": "^0.12.7",
+    "style-loader": "^0.21.0",
+    "vue": "^2.5.16",
+    "vue-loader": "14",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server -w --hot"
+  }
+}
