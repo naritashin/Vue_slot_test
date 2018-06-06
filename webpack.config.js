@@ -5,7 +5,7 @@ var config = {
   entry: './src/index.js',
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, 'public/dist'),
+    path: path.resolve(__dirname, 'public/dist')
   },
   module: {
     rules: [
@@ -23,8 +23,8 @@ var config = {
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      components: path.resolve(__dirname ,'src/components'),
+      vue$: 'vue/dist/vue.esm.js',
+      '@': path.resolve(__dirname, './src'),
       '~': './'
     }
   },
@@ -34,6 +34,6 @@ var config = {
     publicPath: '/dist/',
     port: 3030
   }
-}
+};
 
 module.exports = config;
