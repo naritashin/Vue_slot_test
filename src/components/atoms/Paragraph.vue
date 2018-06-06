@@ -1,5 +1,6 @@
 <template>
-  <div v-if="bool">
+  <div v-if="bool" slot="main-2">
+    <!-- main-2はもちろん効かない -->
     Paragraph contents true
     <slot name="para">{{ bool }}</slot>
   </div>
