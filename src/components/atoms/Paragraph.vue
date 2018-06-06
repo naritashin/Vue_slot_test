@@ -5,7 +5,7 @@
   </div>
   <div v-else>
     Paragraph Contents false
-    {{ value }}
+    {{ value + ' v2' }}
   </div>
 </template>
 

@@ -7,16 +7,21 @@
         Index m2
         <p slot="main-2-1">Index m2-1</p>
       </div>
+      <!-- Index m2 -->
       <p slot="main-2">Index m2 v2</p>
       <p slot="main">Index main v2</p>
       <p slot="main2-3">Index m2-3</p>
       <p slot="main2 main2-3">Index m2 m2-3</p>
+      <!-- m2 m2-3 -->
       <Paragraph slot="main-1" :bool="true">
-        <!-- <span slot="para">false</span> -->
+        <span slot="para">false</span>
+        <!-- Paragraph contents true false -->
+        <!-- slotのならびに準ずる -->
       </Paragraph>
       <p slot="main-3" slot-scope="item">{{ item.value }} v1</p>
-      <Paragraph slot="main-3" slot-scope="content" :value="content.value">
-      </Paragraph>
+      <!-- valueText v1 -->
+      <Paragraph slot="main-3" slot-scope="content" :value="content.value" />
+        <!-- valueText v2 -->
     </MainArticle>
   </div>
 </template>
