@@ -1,9 +1,12 @@
 <template>
   <div v-if="bool">
-    Paragraph contents
+    Paragraph contents true
     <slot name="para">{{ bool }}</slot>
   </div>
-  <p v-else>Paragraph Contents false</p>
+  <div v-else>
+    Paragraph Contents false
+    {{ value }}
+  </div>
 </template>
 
 <script>
@@ -13,6 +16,10 @@ export default {
     bool: {
       type: Boolean,
       default: false
+    },
+    value: {
+      type: String,
+      default: ''
     }
   }
 };
